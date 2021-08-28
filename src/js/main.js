@@ -2,10 +2,6 @@
 
 	var pixelTheme = function () {
 
-		var helloWorld = function(){
-			console.log("Hello");
-		};
-
         /*
         * validate user input for the contact information
         * prevent submitting function if there are empty fiels 
@@ -13,7 +9,7 @@
         * 
         */
         var submitContact = function(){
-            $('.submit').click(function(event){ 
+            $('.submit').click(function(event){
                 var shouldSubmit  = true;
                 var inputs= $('.contact-info');
                 for(var i = 0; i<inputs.length ; i++){
@@ -38,11 +34,9 @@
                 }
             });
         };
-
         var validString = function(str){
             return /^[a-zA-Z0-9_-\s]+$/.test(str);
         };
-		this.helloWorld = helloWorld;
 		this.submitContact = submitContact;
 	};
 
@@ -50,7 +44,6 @@
 
 	$(document).ready(function () {
 		pixelTheme = new pixelTheme();
-		pixelTheme.helloWorld();
 		pixelTheme.submitContact();
 	});
 	
