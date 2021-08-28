@@ -10,7 +10,6 @@
         */
         var submitContact = function(){
             $('.submit').click(function(event){
-                console.log("Tseting");
                 var shouldSubmit  = true;
                 var inputs= $('.contact-info');
                 
