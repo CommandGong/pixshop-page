@@ -10,8 +10,10 @@
         */
         var submitContact = function(){
             $('.submit').click(function(event){
+                console.log("Tseting");
                 var shouldSubmit  = true;
                 var inputs= $('.contact-info');
+                
                 for(var i = 0; i<inputs.length ; i++){
                     value = inputs[i].value;
                     if(value.trim()==""){
@@ -30,7 +32,7 @@
                 }
 
                 if(!shouldSubmit){
-                        event.preventDefault();
+                    event.preventDefault();
                 }
             });
         };
