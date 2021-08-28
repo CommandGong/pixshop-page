@@ -1,0 +1,204 @@
+
+$mediaWidth: 992px
+
+@font-face 
+    font-family: proximanova
+    src: url("../fonts/ProximaNova-Black.otf") format("opentype")
+
+    
+
+@font-face 
+    font-family: sentinel-bookItalic
+    src: url("../fonts/Sentinel-BookItalic.otf") format("opentype")
+    
+@font-face 
+    font-family: gothamhtf-black
+    src: url("../fonts/GothamHTF-Black.otf") format("opentype")
+
+@font-face 
+    font-family: sentinel-book
+    src: url("../fonts/Sentinel-Book.ttf") format("truetype")
+
+.flex
+  display: flex
+.alian-center
+  align-items: center
+.justify-center
+  justify-content: center
+.justify-end
+  justify-content: flex-end
+.menu-grey
+  background-color: #f7f6f2
+.flex-column
+  flex-direction: column
+.section
+  padding: 3rem 0
+.container-custom
+  /*width: 90%*/
+.logo-right-sapcing
+  margin-right: 10px
+.logo-top-spacing
+  padding-top: 10px 
+.btn-submit
+  background-color: #34b7c1
+  padding-left: 100px
+  padding-right: 100px
+  border: none
+  font-size: 2rem
+  padding-top: 20px
+  padding-bottom: 20px
+  color: white    
+  box-shadow: 10px 10px #b1d7dc
+.margin-top-space
+  margin-top: 30px
+
+.sentinel-bookItalic
+  font-family: sentinel-bookItalic
+.proximanova
+  font-family: proximanova
+.gothamhtf-black
+  font-family: gothamhtf-black
+.sentinel-book
+  font-family: sentinel-book
+.font-bold
+  font-weight: bold
+.font-italic
+  font-style: italic
+.font-light-grey
+  color: #7a7c7c
+.font-pink
+  color: #c72b64
+.font-lighter
+  font-weight: lighter
+
+.header-navbar
+  margin-bottom: 50px
+.navbar-custom
+  padding-top: 0px
+  padding-bottom: 0px
+  .navbar-collapse
+    flex-grow: unset
+    width: 100%
+  li
+    display: flex
+    padding-top: 20px
+    padding-bottom: 20px
+    a
+      color: rgba(0,0,0,.55)
+      text-decoration: none
+
+.header-logo
+  padding-top: 30px
+  padding-bottom: 30px
+
+.banner-image
+  img
+    width:100%
+
+.address-content
+  .address-topic
+    margin-top: 30px
+    h1
+      font-size: 50px
+  .block
+    margin-bottom: 30px
+  .address-detail-block
+    margin-top: 76px
+  .map
+    .google-map
+        width: 95% 
+        height: 450px
+        border: 0
+.contact-us-section
+  .contact-us-content
+    padding-left: 5%
+    padding-right: 5%
+    div
+      margin-top: 1rem
+    .contact-us-form 
+      label
+        margin-top: 1rem
+      .contact-input 
+        height:50px
+      .contact-textarea
+        height: 300px
+      .errormessage
+        color: red
+
+.footer-section
+  padding: 5rem 0
+  background-color: #535351
+  color: white
+  .footer-content
+    background-color: #535351
+    .block
+      padding-bottom: 5rem
+    .footer-introduction
+      padding-bottom: 10rem
+    .list
+      display: flex 
+      justify-content: center 
+      h4
+        margin-bottom: 0
+      .flex-column
+        h3
+          padding-bottom:3px 
+    .logo-group
+      margin-top:30px
+        
+
+@media (max-width: $mediaWidth)  
+  .header-logo
+    display: none
+  .navbar-custom
+    .container-fluid
+      justify-content: left
+      .navbar-nav
+        li:hover 
+          border-left: solid
+          border-color: red
+          border-width: 15px
+          transition: 0.2s
+      .menu
+        width: 10%
+    li
+      justify-content: center
+    .logo-mobile-container
+      width: 90%
+      .logo-mobile
+        display: flex
+        align-items: center
+
+  .footer-section
+    .footer-content
+      .footer-introduction
+        padding-bottom: 2rem
+        div
+          margin-top: 30px
+      .footer-address
+        text-align: center
+        div
+          margin-top:30px
+@media (min-width: $mediaWidth)   
+  .navbar-custom
+    .container-fluid
+      justify-content: center
+    .navbar-nav
+      width:100%
+      display: flex
+      justify-content: center
+    li 
+      width: 19%
+      display: flex
+      justify-content: center
+      align-items: center
+    .border-double-side
+      border-left: solid
+      border-right: solid
+    .border-right
+      border-right: solid
+    .menu-border
+      border-width: thin
+      border-color: #e1e6ea
+    .logo-mobile
+      display: none
