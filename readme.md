@@ -4,4 +4,4 @@ Pixel Shop page
  - css is written in  src/sass and javascript function all written in src/js, if want to edit it please run following command after change js/sass file to make the chage effect.
         gulp watch
  
- - 
+ - git address: https://github.com/CommandGong/pixshop-page
